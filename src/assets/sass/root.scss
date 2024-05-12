@@ -12,7 +12,7 @@
         --primaryLight: #90c4eb;
         --secondary: #001f3f;
         --secondaryLight: #001f3f;
-        --headerColor: #0877cd;
+        --headerColor: #ffffff;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
 
@@ -46,6 +46,7 @@
         font-size: var(--headerFontSize);
         line-height: 1.2em;
         font-weight: 900;
+        text-shadow: 1px 1px 2px black;
         color: var(--headerColor);
         text-align: inherit;
     }
@@ -122,9 +123,10 @@
         padding: 0 calc(24/16 * 1rem);
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
-        background-color: #4099DE;
-        border: 2px solid #90c4eb;
+        background-color: #a2ceef;
+        border: 0px solid #1e1d1d2c;
         display: inline-block;
+        text-shadow: .5px .5px 1px black;
         position: relative;
         z-index: 1;
         transition: color 0.3s;
