@@ -8,11 +8,11 @@
 @media only screen and (min-width: 0em) {
     // Website colors
     :root {
-        --primary: #ffba19;
-        --primaryLight: #ffd675;
+        --primary: #90c4eb;
+        --primaryLight: #90c4eb;
         --secondary: #001f3f;
         --secondaryLight: #001f3f;
-        --headerColor: #1a1a1a;
+        --headerColor: #0877cd;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
 
@@ -102,7 +102,72 @@
             transition: width 0.3s;
         }
     }
+    //divider for in between buttons
+    .divider{
+        width:25px;
+        height:auto;
+        display:inline-block;
+    }
+    // new quote button codestitch
+    .cs-button-5 {
+        text-align: center;
+        font-size: calc(16/16 * 1rem);
+        line-height: calc(56/16 * 1rem);
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: .05em;
+        min-width: calc(174/14 * 1rem);
+        margin: 0;
+        color: #ffffff;
+        padding: 0 calc(24/16 * 1rem);
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        background-color: #4099DE;
+        border: 2px solid #90c4eb;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition: color 0.3s;
+    
+        .cs-button-text {
+            display: block;
+            /* we translate it up so it looks centered in the white space. The black :before element takes up space at the bottom and makes it looks off-center */
+            transform: translateY(-0.125rem);
+            transition: transform 0.3s, color .3s, letter-spacing .3s;
+        }
+    
+        &:before {
+            content: "";
+            width: 100%;
+            height: calc(6/16 * 1rem);
+            background: #0877cd;
+            opacity: 1;
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            transition: height 0.3s;
+            z-index: -1;
+        }
+    
+        &:hover {
+            .cs-button-text {
+                color: #9ccdec;
+                letter-spacing: .15em;
+            }
+            .cs-button-text {
+                transform: translateY(0);
+            }
+    
+            &:before {
+                height: 100%;
+            }
+        }
+    }
+                                    
 }
+
+
 
 /* Fonts and general styles */
 @media only screen and (min-width: 0em) {
