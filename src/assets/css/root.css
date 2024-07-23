@@ -39,7 +39,8 @@
     font-size: var(--headerFontSize);
     line-height: 1.2em;
     font-weight: 900;
-    text-shadow: 2px 2px 2px #202020;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
     color: var(--headerColor);
     text-align: inherit;
   }

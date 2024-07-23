@@ -5,7 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   #hero {
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Segoe UI Heavy", "Segoe", sans-serif;
     /* Centers button */
     text-align: center;
     /* changes on tablet */
@@ -187,7 +187,7 @@
   --primary: #2598d4;
   --primaryLight: #a7d9f4;
   --secondary: #a7d9f4;
-  --secondaryLight: #b72222;
+  --secondaryLight: #2598d4;
   --headerColor: #ffffff;
   --bodyTextColor: #323132;
   --bodyTextColorWhite: #fafbfc;
